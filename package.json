@@ -1,0 +1,22 @@
+{
+  "name": "steam-pc-spec",
+  "version": "1.0.0",
+  "description": "Filter games by whether or not your system can run them",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamannjames/steam-pc-specs.git"
+  },
+  "keywords": [
+    "steam"
+  ],
+  "author": "James Hamann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamannjames/steam-pc-specs/issues"
+  },
+  "homepage": "https://github.com/hamannjames/steam-pc-specs#readme"
+}
