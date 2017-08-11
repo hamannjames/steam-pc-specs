@@ -5,8 +5,8 @@ module.exports = {
     entry: './client/App.js',
 
     output: {
-        path: path.resolve(__dirname, './bin/www/js'),
-        filename: 'main.js'
+        path: path.resolve(__dirname, './dist'),
+        filename: 'bundle.js'
     },
 
     module: {
@@ -15,15 +15,12 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 query: {
-                    'presets': ['es2015']
-                }
+                    'presets': ['es2015', 'react']
+                },
+                exclude: /node_modules/
             }
         ]
     },
 
-    stats: {
-        colors: true
-    },
-
-    devtool: 'source-map'
+    target: 'web'
 }
